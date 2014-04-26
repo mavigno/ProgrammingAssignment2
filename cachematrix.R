@@ -41,7 +41,7 @@ cacheSolve <- function(x, ...) {
         ## error
         m <- try(solve(data),silent=TRUE)
         if ("try-error" %in% class(m)) {
-                stop("Matrix is not invertible")
+                stop("Matrix is not inversible")
         }
         ## store the inverse of the matrix in the cache
         x$setinverse(m)
